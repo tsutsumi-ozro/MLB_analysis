@@ -2,8 +2,11 @@
 name = "mlb"
 version = "0.1.0"
 description = ""
-authors = ["tsutsumi-ozro <soccerbakadaiki@icloud.com>"]
+authors = ["tsutsumi-ozro <kaggle.223@gmail.com>"]
 readme = "README.md"
+packages = [
+    { include = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
