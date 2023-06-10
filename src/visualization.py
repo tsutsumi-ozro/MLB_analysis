@@ -57,3 +57,14 @@ class Plotter:
         )
         fig.show()
 
+    def plot_bb_type(self, df):
+        bb_type = df['bb_type'].dropna().value_counts()
+        fig = go.Figure(data=[go.Pie(labels=bb_type.index, values=bb_type.values)])
+        fig.update_layout(
+            title='Batting, bb_type',
+            autosize=False,
+            width=800,
+            height=600,
+        )
+        fig.show()
+
